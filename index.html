@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/challenge4.css">
+    <title>Challenge4 | Intro section with dropdown navigation</title>
+</head>
+<body>
+    <header id="header_desktop">
+        <div class="navbar">
+            <h1 class="logo">snap</h1>
+            <div class="dropdown1">
+                <button class="dropbtn">Features 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown1-content">
+                    <a href="">
+                        <img src="/images/icon-todo.svg">Todo list
+                    </a>
+                    <a href="">
+                        <img src="/images/icon-calendar.svg">Calendar
+                    </a>
+                    <a href="">
+                        <img src="/images/icon-reminders.svg">Reminders
+                    </a>
+                    <a href="">
+                        <img src="/images/icon-planning.svg">Planning
+                    </a>
+                </div>
+            </div> 
+            <div class="dropdown1">
+                <button class="dropbtn">Company 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown1-content">
+                    <a href="#">History</a>
+                    <a href="#">Our Team</a>
+                    <a href="#">Blog</a>
+                </div>
+            </div> 
+            <a href="#">Careers</a>
+            <a href="#">About</a>
+            <div class="right">
+                <a href="#" class="desktop_login">Login</a>
+                <a href="#" class="desktop_Register">Register</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="clr"></div>
+
+    <section id="content_desktop">
+        <div class="container">
+            <div class="left_info">
+                <h1 class="h_make">Make</h1>
+                <h1>remote work</h1>
+                <p>Get your team in sync, no matter your location. Stramline processes, create team rituals, and watch productivity soar.</p>
+                <a href="#" class="btn_desktop">Learn more</a>
+                <div class="sponso">
+                    <a href="#">
+                        <img src="/images/client-databiz.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="/images/client-audiophile.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="/images/client-meet.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="/images/client-maker.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="right_img">
+                <img src="/images/image-hero-desktop.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <header id="mobile_header">
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <button class="dropdown-btn">Features 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="">
+                    <img src="/images/icon-todo.svg" alt="">Todo list
+                </a>
+                <a href="">
+                    <img src="/images/icon-calendar.svg" alt="">Calendar
+                </a>
+                <a href="">
+                    <img src="/images/icon-reminders.svg" alt="">Reminders
+                </a>
+                <a href="">
+                    <img src="/images/icon-planning.svg" alt="">Planning
+                </a>
+            </div>
+            <button class="dropdown-btn">Company 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="#">History</a>
+                <a href="#">Our Team</a>
+                <a href="#">Blog</a>
+            </div>
+            <button class="dropdown-btn"></button>
+                <a href="#">Careers</a>
+            </button>
+            <button class="dropdown-btn"></button>
+                <a href="#">About</a>
+            </button>
+                <a href="#" class="dropdown_login">Login</a>
+                <a href="#" class="dropdown_register">Register</a>
+        </div>
+            
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <h1>snap</h1>
+        </div> 
+    </header>
+
+    <section id="content_mobile">
+        <div class="container_mobile">
+            <div class="img_info">
+                <img src="/images/image-hero-mobile.png" alt="">
+            </div>
+            <div class="mobile_info">
+                <h1>Make remote work</h1>
+                <p>Get your team in sync, no matter your location. Stramline processes, create team rituals, and watch productivity soar.</p>
+                <button class="btn_mob">
+                    <a href="#">Learn more</a>
+                </button>
+                <div class="sponso">
+                    <a href="#">
+                        <img src="/images/client-databiz.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="/images/client-audiophile.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="/images/client-meet.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="/images/client-maker.svg" alt="">
+                    </a>
+                </div>
+            </div>    
+        </div>
+    </section>
+ <script src="/Script/main.js"></script>
+</body>
+</html>
