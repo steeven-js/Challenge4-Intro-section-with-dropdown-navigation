@@ -9,164 +9,179 @@
 body {
     font-family: 'Epilogue', sans-serif;
     background-color: hsl(0, 0%, 98%);
+    height: 100vh;
+    overflow: hidden;
 }
 
 .clr {
     clear: both;
 }
 
-@media screen and (min-width: 810px) {
-    #mobile_header {
-        display: none;
-    }
+#content_desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    #content_mobile {
-        display: none;
-    }
-    
-    .navbar {
-        overflow: hidden;
-        background-color: hsl(0, 0%, 98%);
-    }
+#mobile_header {
+    display: none;
+}
 
-    .navbar .logo {
-        margin: 10px 40px 10px 20px;
-    }
+#content_mobile {
+    display: none;
+}
 
-    .navbar .right {
-        float: right;
-    }
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
 
-    .desktop_login,
-    .desktop_Register {
-        margin-right: 20px;
-    }
-
-    .navbar h1 {
-        float: left;
-    }
-
-    .navbar a {
-        float: left; /* IMPORTANT*/
-        font-size: 16px;
-        color: hsl(0, 0%, 41%);
-        text-align: center;
-        /* padding: 14px 16px; */
-        padding: 20px;
-        text-decoration: none;
-    }
-
-    .dropdown1 {
-    float: left;
+.navbar {
     overflow: hidden;
-    }
+    width: 100%;
+}
 
-    .dropdown1 .dropbtn { /* Ici button et les a onr les mêmes proprités*/
-        font-size: 16px;  
-        border: none;
-        outline: none;
-        color: hsl(0, 0%, 41%);
-        padding: 20px;
-        background-color: inherit;
-        font-family: inherit;
-        margin: 0;
-    }
+.navbar a {
+    font-size: 16px;
+    color: hsl(0, 0%, 41%);
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
 
-    .navbar a:hover, .dropdown1:hover .dropbtn { /* Les Link sont dans le block drodown */
-        color: hsl(0, 0%, 8%);
-    }
+.navbar .left {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .dropdown1-content {
-        display: none;
-        position: absolute; /* IMPORTANT*/
-        background-color: hsl(0, 0%, 98%);
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-        border-radius: 15px;
-    }
+.navbar .right {
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .dropdown1-content a {
-        float: none; /* IMPORTANT*/
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block; /* IMPORTANT*/
-        text-align: left;
-    }
+.desktop_Register {
+    border: 1px solid gray;
+    border-radius: 10px;
+}
 
-    .dropdown1-content a:hover {
-        background-color: lightgrey;
-        border-radius: 15px;
-    }
+.dropdown1 {
+float: left;
+overflow: hidden;
+}
 
-    .dropdown1-content img{
-        margin-right: 15px;
-    }
+.dropdown1 .dropbtn { /* Ici button et les a onr les mêmes proprités*/
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: hsl(0, 0%, 41%);
+    padding: 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
 
-    .dropdown1:hover .dropdown1-content {
-        display: block; /* IMPORTANT*/
-    }
-    
-    /* Section desktop */
+.navbar a:hover, .dropdown1:hover .dropbtn { /* Les Link sont dans le block drodown */
+    color: hsl(0, 0%, 8%);
+}
 
-    .container {
-        margin: 0 auto;
-        max-width: 1500px;
-        padding-top: 90px;
-    }
+.dropdown1-content {
+    display: none;
+    position: absolute; /* IMPORTANT*/
+    background-color: hsl(0, 0%, 98%);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 15px;
+}
 
-    .left_info {
-        /* border: 1px solid red; */
-        width: 50%;
-        height: 80vh;
-        float: left;
-    }
+.dropdown1-content a {
+    float: none; /* IMPORTANT*/
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; /* IMPORTANT*/
+    text-align: left;
+}
 
-    .right_img {
-        width: 50%;
-        height: 80vh;
-        /* border: 1px solid red; */
-        float: right;
-    }
+.dropdown1-content a:hover {
+    background-color: lightgrey;
+    border-radius: 15px;
+}
 
-    .right_img img {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
+.dropdown1-content img{
+    margin-right: 15px;
+}
 
-    .left_info .h_make {
-        margin-top: 230px;
-    }
-    .left_info h1 {
-        font-size: 90px;
-    }
+.dropdown1:hover .dropdown1-content {
+    display: block; /* IMPORTANT*/
+}
 
-    .left_info p {
-        margin: 90px 0px 150px 0px;
-        color: hsl(0, 0%, 41%);
-        padding-right: 90px;
-    }
+/* Section desktop */
 
-    .left_info .btn_desktop {
-        padding: 16px 20px;
-        background: black;
-        text-align: center;
-        text-decoration: none;
-        color: hsl(0, 0%, 98%);
-        border-radius: 15px;
-    }
+.container {
+    margin: 0 auto;
+    margin-top: 80px;
+    max-width: 1400px;
+    position: relative;
 
-    .left_info .sponso {
-        display: flex;
-        margin-top: 100px;
-        align-items: center;
-        justify-content: space-between;
-        margin-right: 80px;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-}   
+.left_info {  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.right_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right_img img {
+    display: block;
+    width: 80%;
+}
+
+.left_info h1 {
+    font-size: 90px;
+}
+
+.left_info p {
+    color: hsl(0, 0%, 41%);
+    padding-right: 345px;
+    margin: 40px 0px;
+    font-size: 1.2rem;
+}
+
+.left_info .btn_desktop {
+    padding: 16px 20px;
+    background: black;
+    text-align: center;
+    text-decoration: none;
+    color: hsl(0, 0%, 98%);
+    border-radius: 15px;
+}
+
+.left_info .sponso {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 80px;
+    position: absolute;
+    bottom: 0;
+} 
 
 /* MOBILE */
   /* On smaller screens, where width is less than 810px, change the style of the sidenav (less padding and a smaller font size) */
