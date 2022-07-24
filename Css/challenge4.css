@@ -19,8 +19,10 @@ body {
 
 #content_desktop {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
 }
 
 #mobile_header {
@@ -39,8 +41,12 @@ header {
 }
 
 .navbar {
-    overflow: hidden;
-    width: 100%;
+    /* overflow: hidden; */
+    width: 1700px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin: auto;
 }
 
 .navbar a {
@@ -65,14 +71,19 @@ header {
     align-items: center;
 }
 
+.navbar h1 {
+    margin-right: 50px;
+    font-size: 2.2rem;
+}
+
 .desktop_Register {
     border: 1px solid gray;
     border-radius: 10px;
 }
 
 .dropdown1 {
-float: left;
-overflow: hidden;
+    float: left;
+    overflow: hidden;
 }
 
 .dropdown1 .dropbtn { /* Ici button et les a onr les mêmes proprités*/
@@ -126,20 +137,22 @@ overflow: hidden;
 
 .container {
     margin: 0 auto;
-    margin-top: 80px;
     max-width: 1400px;
     position: relative;
-
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.left_info {  
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    /* border: 1px solid red; */
+
+}
+
+.left_info {
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    /* padding-left: 150px; */
+    height: 100%;
 }
 
 .right_img {
@@ -147,17 +160,18 @@ overflow: hidden;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* width: 1500px; */
 }
 
 .right_img img {
     display: block;
-    width: 80%;
+    width: 100%;
 }
 
 .left_info h1 {
     font-size: 90px;
+    margin-top: 150px;
 }
-
 .left_info p {
     color: hsl(0, 0%, 41%);
     padding-right: 345px;
@@ -166,22 +180,31 @@ overflow: hidden;
 }
 
 .left_info .btn_desktop {
+    display: inline-block;
     padding: 16px 20px;
     background: black;
     text-align: center;
     text-decoration: none;
     color: hsl(0, 0%, 98%);
     border-radius: 15px;
+    margin-top: 50px;
+}
+
+.left_info .btn_desktop:hover {
+    background: hsl(0, 0%, 98%);
+    color: black;
+    border: 1px solid black;
 }
 
 .left_info .sponso {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 80px;
     position: absolute;
     bottom: 0;
-} 
+}
+
+.left_info .sponso img{
+    margin-right: 50px;
+}
 
 /* MOBILE */
   /* On smaller screens, where width is less than 810px, change the style of the sidenav (less padding and a smaller font size) */
