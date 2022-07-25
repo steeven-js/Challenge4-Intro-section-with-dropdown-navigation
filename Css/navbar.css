@@ -11,7 +11,7 @@ body {
     /* background: url(./pexel-1.jpg); */
     background-attachment: fixed;
     background-position: center;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 header {
@@ -130,7 +130,7 @@ header nav ul li a:hover {
 
 @media (max-width: 991px) {
     body {
-        overflow-x: hidden;
+        overflow: hidden;
         width: 100vw;
     }
 
