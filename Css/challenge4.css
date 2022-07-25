@@ -112,7 +112,8 @@ body {
         display: none;
     }
 
-    #mobile_header {
+    #mobile_header,
+    .menu-toggle  {
         display: block;
     }
 
