@@ -10,8 +10,8 @@ body {
     font-family: 'Epilogue', sans-serif;
     background-color: hsl(0, 0%, 98%);
     height: 100vh;
+    overflow: visible;
 }
-
 
 #content_desktop {
     display: flex;
@@ -102,28 +102,22 @@ body {
 /* MOBILE */
 
 @media screen and (max-width: 991px) {
-    body, html {
-        overflow-x: hidden;
-    }
 
     #content_desktop {
         display: none;
     }
 
-    
     #content_desktop {
         display: none;
     }
 
     #mobile_header {
         display: block;
-        /* border: 2px solid orangered; */
     }
 
     #content_mobile {
         display: block;
         margin-top: 80px;
-        /* height: calc(100vh - 50px); */
     }
 
     #content_mobile .container_mobile .img_info img {
@@ -178,9 +172,6 @@ body {
 }
 
 @media screen and (max-width: 810px) {
-    body, html {
-        overflow-x: hidden;
-    }
 
     #content_desktop {
         display: none;
@@ -249,15 +240,11 @@ body {
 }
 
 @media screen and (max-width: 375px) {
-    body, html {
-        overflow-x: hidden;
-    }
 
     #content_desktop {
         display: none;
     }
 
-    
     #content_desktop {
         display: none;
     }
