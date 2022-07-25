@@ -103,6 +103,9 @@ body, html {
 /* MOBILE */
 
 @media screen and (max-width: 991px) {
+    body, html {
+        overflow-x: hidden;
+    }
 
     #content_desktop {
         display: none;
@@ -176,6 +179,9 @@ body, html {
 }
 
 @media screen and (max-width: 810px) {
+    body, html {
+        overflow-x: hidden;
+    }
 
     #content_desktop {
         display: none;
@@ -241,10 +247,12 @@ body, html {
         display: block;
         float: left;
     }
-
 }
 
 @media screen and (max-width: 375px) {
+    body, html {
+        overflow-x: hidden;
+    }
 
     #content_desktop {
         display: none;
