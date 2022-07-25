@@ -24,7 +24,7 @@ https://steeven-js.github.io/Challenge4-Intro-section-with-dropdown-navigation/
 
 # Frontend Mentor - Intro section with dropdown navigation
 
-![Design preview for the Intro section with dropdown navigation coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Intro section with dropdown navigation coding challenge](./intro-section-with-dropdown-navigation-main/design/desktop-preview.jpg)
 
 ## Welcome! 👋
 
