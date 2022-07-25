@@ -79,7 +79,6 @@ header nav ul li.sub-menu:before {
     right: 0px; /*LOL*/
 }
 
-
 header nav ul li.active.sub-menu:before {
     content: '\f106';
 }
@@ -130,6 +129,10 @@ header nav ul li a:hover {
 }
 
 @media (max-width: 991px) {
+    body {
+        overflow-x: hidden;
+    }
+    
     header {
         padding: 0 20px;
     }
