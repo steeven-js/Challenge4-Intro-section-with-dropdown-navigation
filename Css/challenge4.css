@@ -6,16 +6,12 @@
     box-sizing: border-box;
 }
 
-body {
+body, html {
     font-family: 'Epilogue', sans-serif;
     background-color: hsl(0, 0%, 98%);
-    height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
-.clr {
-    clear: both;
-}
 
 #content_desktop {
     display: flex;
@@ -33,106 +29,6 @@ body {
     display: none;
 }
 
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid red; */
-}
-
-.navbar {
-    /* overflow: hidden; */
-    width: 1700px;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    margin: auto;
-}
-
-.navbar a {
-    font-size: 16px;
-    color: hsl(0, 0%, 41%);
-    text-align: center;
-    padding: 20px;
-    text-decoration: none;
-}
-
-.navbar .left {
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar .right {
-    float: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar h1 {
-    margin-right: 50px;
-    font-size: 2.2rem;
-}
-
-.desktop_Register {
-    border: 1px solid gray;
-    border-radius: 10px;
-}
-
-.dropdown1 {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown1 .dropbtn { /* Ici button et les a onr les mêmes proprités*/
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: hsl(0, 0%, 41%);
-    padding: 20px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-.navbar a:hover, .dropdown1:hover .dropbtn { /* Les Link sont dans le block drodown */
-    color: hsl(0, 0%, 8%);
-}
-
-.dropdown1-content {
-    display: none;
-    position: absolute; /* IMPORTANT*/
-    background-color: hsl(0, 0%, 98%);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    border-radius: 15px;
-}
-
-.dropdown1-content a {
-    float: none; /* IMPORTANT*/
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block; /* IMPORTANT*/
-    text-align: left;
-}
-
-.dropdown1-content a:hover {
-    background-color: lightgrey;
-    border-radius: 15px;
-}
-
-.dropdown1-content img{
-    margin-right: 15px;
-}
-
-.dropdown1:hover .dropdown1-content {
-    display: block; /* IMPORTANT*/
-}
-
 /* Section desktop */
 
 .container {
@@ -142,41 +38,37 @@ header {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    /* border: 1px solid red; */
-
 }
 
 .left_info {
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    /* padding-left: 150px; */
-    height: 100%;
 }
 
 .right_img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* width: 1500px; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 150px;
 }
 
 .right_img img {
     display: block;
-    width: 100%;
+    width: 500px;
 }
 
 .left_info h1 {
-    font-size: 90px;
-    margin-top: 150px;
+	font-size: 85px;
 }
+
 .left_info p {
-    color: hsl(0, 0%, 41%);
-    padding-right: 345px;
-    margin: 40px 0px;
-    font-size: 1.2rem;
+	color: hsl(0, 0%, 41%);
+	margin: 40px 0px;
+	font-size: 1rem;
+	line-height: 1.4rem;
 }
 
 .left_info .btn_desktop {
@@ -187,7 +79,6 @@ header {
     text-decoration: none;
     color: hsl(0, 0%, 98%);
     border-radius: 15px;
-    margin-top: 50px;
 }
 
 .left_info .btn_desktop:hover {
@@ -197,9 +88,11 @@ header {
 }
 
 .left_info .sponso {
-    display: flex;
-    position: absolute;
-    bottom: 0;
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .left_info .sponso img{
@@ -207,9 +100,14 @@ header {
 }
 
 /* MOBILE */
-  /* On smaller screens, where width is less than 810px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-width: 810px) {
-    #header_desktop,
+
+@media screen and (max-width: 991px) {
+
+    #content_desktop {
+        display: none;
+    }
+
+    
     #content_desktop {
         display: none;
     }
@@ -221,120 +119,147 @@ header {
 
     #content_mobile {
         display: block;
+        margin-top: 80px;
     }
 
-        /* The sidebar menu */
-    .sidebar {
-        float: right;
-        height: 100%; /* 100% Full-height */
-        width: 0; /* 0 width - change this with JavaScript */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Stay on top */
-        top: 0;
-        right: 0;
-        background-color: hsl(0, 0%, 98%); /* Black*/
-        overflow-x: hidden; /* Disable horizontal scroll */
-        padding-top: 100px; /* Place content 60px from the top */
-        transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-    }
-
-    .sidebar .dropdown-btn{
-        background: hsl(0, 0%, 98%);
-        font-family: 'Epilogue', sans-serif;
-        font-size: 16px;
-    }
-
-    .sidebar .dropdown-container{
-        background: hsl(0, 0%, 98%);
-    }
-
-    /* The sidebar links */
-    .sidebar a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
+    #content_mobile .container_mobile .img_info img {
         display: block;
-        transition: 0.3s;
-        color: hsl(0, 0%, 41%);
-        background: hsl(0, 0%, 98%);
-    }
-
-    .sidebar img {
-        display: inline-block;
-        margin-right: 10px;
-    }
-
-    .sidebar .dropdown_login,
-    .sidebar .dropdown_register {
-        text-decoration: none;
-        font-size: 16px;
-        color: #818181;
-        display: block;
-        background: none;
-        text-align: left;
-        cursor: pointer;
-        outline: none;
-    }
-
-    .sidebar .dropdown_login {
-        margin: 10px 20px;
-        text-align: center;
-        border-radius: 15px;
-        padding: 10px;
-    }
-
-    .sidebar .dropdown_register {
-        margin: 10px 20px;
-        text-align: center;
-        border: 2px solid black;
-        border-radius: 15px;
-        padding: 10px;
-    }
-
-    /* Position and style the close button (top right corner) */
-    .sidebar .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 80px;
-        margin-left: 50px;
-    }
-
-    /* The button used to open the sidebar */
-    .openbtn {
-        font-size: 20px;
-        cursor: pointer;
-        /* background-color: #111; */
-        color: black;
-        font-size: 30px;
-        padding: 10px 15px;
-        border: none;
-        float: right;
-        position: fixed;
-        top: 15px;
-        right: 15px;
-        background: hsl(0, 0%, 98%);
-    }
-
-
-    /* Style the sidenav links and the dropdown button */
-    .sidenav a, .dropdown-btn {
-        padding: 6px 8px 6px 16px;
-        text-decoration: none;
-        font-size: 20px;
-        color: #818181;
-        display: block;
-        border: none;
-        background: none;
         width: 100%;
-        text-align: left;
-        cursor: pointer;
-        outline: none;
     }
 
-    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-    #main {
-        transition: margin-Right .5s; /* If you want a transition effect */
-        padding: 20px;
+    #content_mobile .container_mobile .mobile_info h1 {
+        text-align: center;
+        font-size: 45px;
+        margin-top: 60px;
+    }
+
+    #content_mobile .container_mobile .mobile_info p {
+        text-align: center;
+        color: hsl(0, 0%, 41%);
+        padding: 0px 25px;
+        font-size: 18px;
+        line-height: 2rem;
+        margin-top: 30px;
+    }
+
+    #content_mobile .container_mobile .mobile_info .btn_mob {
+        display: block;
+        margin: 20px auto;
+        padding: 16px 20px;
+        border: none;
+        border-radius: 15px;
+        background: black;
+    }
+
+    #content_mobile .container_mobile .mobile_info .btn_mob a {
+        text-align: center;
+        text-decoration: none;
+        color: hsl(0, 0%, 98%);
+        font-size: 18px;
+    }
+
+    #content_mobile .sponso  {
+        height: 60px;
+        /* border: 2px solid blue; */
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 50px 0;
+    }
+
+    #content_mobile .sponso a {
+        display: block;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 810px) {
+
+    #content_desktop {
+        display: none;
+    }
+
+    #mobile_header {
+        display: block;
+        /* border: 2px solid orangered; */
+    }
+
+    #content_mobile {
+        display: block;
+        margin-top: 80px;
+    }
+
+    #content_mobile .container_mobile .img_info img {
+        display: block;
+        width: 100%;
+    }
+
+    #content_mobile .container_mobile .mobile_info h1 {
+        text-align: center;
+        font-size: 45px;
+        margin-top: 60px;
+    }
+
+    #content_mobile .container_mobile .mobile_info p {
+        text-align: center;
+        color: hsl(0, 0%, 41%);
+        padding: 0px 25px;
+        font-size: 18px;
+        line-height: 2rem;
+        margin-top: 30px;
+    }
+
+    #content_mobile .container_mobile .mobile_info .btn_mob {
+        display: block;
+        margin: 20px auto;
+        padding: 16px 20px;
+        border: none;
+        border-radius: 15px;
+        background: black;
+    }
+
+    #content_mobile .container_mobile .mobile_info .btn_mob a {
+        text-align: center;
+        text-decoration: none;
+        color: hsl(0, 0%, 98%);
+        font-size: 18px;
+    }
+
+    #content_mobile .sponso  {
+        height: 60px;
+        /* border: 2px solid blue; */
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 50px 0;
+    }
+
+    #content_mobile .sponso a {
+        display: block;
+        float: left;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    #content_desktop {
+        display: none;
+    }
+
+    
+    #content_desktop {
+        display: none;
+    }
+
+    #mobile_header {
+        display: block;
+        /* border: 2px solid orangered; */
+    }
+
+    #content_mobile {
+        display: block;
+        margin-top: 80px;
     }
 
     #content_mobile .container_mobile .img_info img {

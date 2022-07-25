@@ -4,52 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Css/challenge4.css">
     <title>Challenge4 | Intro section with dropdown navigation</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./Css/navbar.css'>
+    <link rel="stylesheet" href="./Css/challenge4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header id="header_desktop">
-        <nav class="navbar">
-            <div class="left">
-                <h1 class="logo">snap</h1>
-                <div class="dropdown1">
-                    <button class="dropbtn">Features 
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown1-content">
-                        <a href="">
-                            <img src="./images/icon-todo.svg">Todo list
-                        </a>
-                        <a href="">
-                            <img src="./images/icon-calendar.svg">Calendar
-                        </a>
-                        <a href="">
-                            <img src="./images/icon-reminders.svg">Reminders
-                        </a>
-                        <a href="">
-                            <img src="./images/icon-planning.svg">Planning
-                        </a>
-                    </div>
-                </div> 
-                <div class="dropdown1">
-                    <button class="dropbtn">Company 
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown1-content">
-                        <a href="#">History</a>
-                        <a href="#">Our Team</a>
-                        <a href="#">Blog</a>
-                    </div>
-                    <a href="#">Careers</a>
-                    <a href="#">About</a>
-                </div>    
-            </div>
-
-            <div class="right">
-                <a href="#" class="desktop_login">Login</a>
-                <a href="#" class="desktop_Register">Register</a>
-            </div>
+    <header>
+        <div class="logo">
+            <img src="./images/logo.svg" alt="logo">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li class="sub-menu"><a href="#">Features</i></a>
+                    <ul>
+                        <li class="sub-menu-ct"><img class="sub-menu-img" src="./images/icon-todo.svg" alt="todo"><a href="#">Todo List</a></li>
+                        <li class="sub-menu-ct"><img class="sub-menu-img" src="./images/icon-calendar.svg" alt="Calendar"><a href="#">Calendar</a></li>
+                        <li class="sub-menu-ct"><img class="sub-menu-img" src="./images/icon-reminders.svg" alt="Reminders"><a href="#">Reminders</a></li>
+                        <li class="sub-menu-ct"><img class="sub-menu-img" src="./images/icon-planning.svg" alt="Planning"><a href="#">Planning</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu"><a href="#">Company</i></a>
+                    <ul>
+                        <li class="sub-menu-ct"><a href="#">History</a></li>
+                        <li class="sub-menu-ct"><a href="#">Our Team</a></li>
+                        <li class="sub-menu-ct"><a href="#">Blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Carrers</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <ul class="login">
+                <li><a href="#">login</a></li>
+                <li><a href="#" class="register">Register</a></li>
+            </ul>
         </nav>
+        <button class="menu-toggle">
+            <span class="line l1"></span>
+            <span class="line l2"></span>
+            <span class="line l3"></span>
+        </div>
     </header>
 
     <div class="clr"></div>
@@ -58,7 +53,9 @@
         <div class="container">
             <div class="left_info">
                 <h1 class="h_make">Make <br> remote work</h1>
-                <p>Get your team in sync, no matter your location. Stramline processes, create team rituals, and watch productivity soar.</p>
+                <p>Get your team in sync, no matter your location. <br>
+                Stramline processes, create team rituals, and <br> 
+                watch productivity soar.</p>
                 <a href="#" class="btn_desktop">Learn more</a>
                 <div class="sponso">
                     <a href="#">
@@ -80,50 +77,6 @@
             </div>
         </div>
     </section>
-
-    <header id="mobile_header">
-        <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <button class="dropdown-btn">Features 
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-                <a href="">
-                    <img src="./images/icon-todo.svg" alt="">Todo list
-                </a>
-                <a href="">
-                    <img src="./images/icon-calendar.svg" alt="">Calendar
-                </a>
-                <a href="">
-                    <img src="./images/icon-reminders.svg" alt="">Reminders
-                </a>
-                <a href="">
-                    <img src="./images/icon-planning.svg" alt="">Planning
-                </a>
-            </div>
-            <button class="dropdown-btn">Company 
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-                <a href="#">History</a>
-                <a href="#">Our Team</a>
-                <a href="#">Blog</a>
-            </div>
-            <button class="dropdown-btn"></button>
-                <a href="#">Careers</a>
-            </button>
-            <button class="dropdown-btn"></button>
-                <a href="#">About</a>
-            </button>
-                <a href="#" class="dropdown_login">Login</a>
-                <a href="#" class="dropdown_register">Register</a>
-        </div>
-            
-        <div id="main">
-            <button class="openbtn" onclick="openNav()">&#9776;</button>
-            <h1>snap</h1>
-        </div> 
-    </header>
 
     <section id="content_mobile">
         <div class="container_mobile">
@@ -153,6 +106,8 @@
             </div>    
         </div>
     </section>
- <script src="./Script/main.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src='./Script/script.js'></script>
 </body>
 </html>
