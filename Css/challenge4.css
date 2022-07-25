@@ -122,18 +122,18 @@ body {
         margin-top: 80px;
     }
 
-    #content_mobile .container_mobile .img_info img {
+    #content_mobile .img_info img {
         display: block;
         width: 100%;
     }
 
-    #content_mobile .container_mobile .mobile_info h1 {
+    #content_mobile .mobile_info h1 {
         text-align: center;
         font-size: 45px;
         margin-top: 60px;
     }
 
-    #content_mobile .container_mobile .mobile_info p {
+    #content_mobile .mobile_info p {
         text-align: center;
         color: hsl(0, 0%, 41%);
         padding: 0px 25px;
@@ -142,20 +142,25 @@ body {
         margin-top: 30px;
     }
 
-    #content_mobile .container_mobile .mobile_info .btn_mob {
-        display: block;
-        margin: 20px auto;
+    #content_mobile .btn_mob {
+        display: flex;
         padding: 16px 20px;
-        border: none;
-        border-radius: 15px;
         background: black;
-    }
-
-    #content_mobile .container_mobile .mobile_info .btn_mob a {
         text-align: center;
         text-decoration: none;
         color: hsl(0, 0%, 98%);
-        font-size: 18px;
+        border-radius: 15px;
+        margin: 0 auto;
+        width: 140px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    #content_mobile .btn_mob:hover {
+        background: hsl(0, 0%, 98%);
+        color: black;
+        border: 1px solid black;
     }
 
     #content_mobile .sponso  {
@@ -170,6 +175,7 @@ body {
         display: block;
         float: left;
     }
+
 }
 
 @media screen and (max-width: 810px) {
@@ -178,7 +184,12 @@ body {
         display: none;
     }
 
-    #mobile_header {
+    #content_desktop {
+        display: none;
+    }
+
+    #mobile_header,
+    .menu-toggle  {
         display: block;
     }
 
@@ -187,18 +198,18 @@ body {
         margin-top: 80px;
     }
 
-    #content_mobile .container_mobile .img_info img {
+    #content_mobile .img_info img {
         display: block;
         width: 100%;
     }
 
-    #content_mobile .container_mobile .mobile_info h1 {
+    #content_mobile .mobile_info h1 {
         text-align: center;
         font-size: 45px;
         margin-top: 60px;
     }
 
-    #content_mobile .container_mobile .mobile_info p {
+    #content_mobile .mobile_info p {
         text-align: center;
         color: hsl(0, 0%, 41%);
         padding: 0px 25px;
@@ -207,20 +218,25 @@ body {
         margin-top: 30px;
     }
 
-    #content_mobile .container_mobile .mobile_info .btn_mob {
-        display: block;
-        margin: 20px auto;
+    #content_mobile .btn_mob {
+        display: flex;
         padding: 16px 20px;
-        border: none;
-        border-radius: 15px;
         background: black;
-    }
-
-    #content_mobile .container_mobile .mobile_info .btn_mob a {
         text-align: center;
         text-decoration: none;
         color: hsl(0, 0%, 98%);
-        font-size: 18px;
+        border-radius: 15px;
+        margin: 0 auto;
+        width: 140px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    #content_mobile .btn_mob:hover {
+        background: hsl(0, 0%, 98%);
+        color: black;
+        border: 1px solid black;
     }
 
     #content_mobile .sponso  {
@@ -235,6 +251,7 @@ body {
         display: block;
         float: left;
     }
+
 }
 
 @media screen and (max-width: 375px) {
@@ -247,7 +264,8 @@ body {
         display: none;
     }
 
-    #mobile_header {
+    #mobile_header,
+    .menu-toggle  {
         display: block;
     }
 
@@ -256,18 +274,18 @@ body {
         margin-top: 80px;
     }
 
-    #content_mobile .container_mobile .img_info img {
+    #content_mobile .img_info img {
         display: block;
         width: 100%;
     }
 
-    #content_mobile .container_mobile .mobile_info h1 {
+    #content_mobile .mobile_info h1 {
         text-align: center;
         font-size: 45px;
         margin-top: 60px;
     }
 
-    #content_mobile .container_mobile .mobile_info p {
+    #content_mobile .mobile_info p {
         text-align: center;
         color: hsl(0, 0%, 41%);
         padding: 0px 25px;
@@ -276,20 +294,25 @@ body {
         margin-top: 30px;
     }
 
-    #content_mobile .container_mobile .mobile_info .btn_mob {
-        display: block;
-        margin: 20px auto;
+    #content_mobile .btn_mob {
+        display: flex;
         padding: 16px 20px;
-        border: none;
-        border-radius: 15px;
         background: black;
-    }
-
-    #content_mobile .container_mobile .mobile_info .btn_mob a {
         text-align: center;
         text-decoration: none;
         color: hsl(0, 0%, 98%);
-        font-size: 18px;
+        border-radius: 15px;
+        margin: 0 auto;
+        width: 140px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    #content_mobile .btn_mob:hover {
+        background: hsl(0, 0%, 98%);
+        color: black;
+        border: 1px solid black;
     }
 
     #content_mobile .sponso  {
