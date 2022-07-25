@@ -191,20 +191,11 @@ header nav ul li a:hover {
     /* #endregion Classe active Quand on click dessus*/
 
     header nav {
-        /* position: absolute;
-        width: 50%;
-        height: calc(100vh - 50px);
-        background-color: hsl(0, 0%, 98%);
-        top: 50px;
-        right: -100%;
-        transition: 0.5s; */
-
         position: fixed;
         width: 50vw;
         min-height: 100vh;
         right: 0;
         display: flex;
-        justify-content: center;
         align-items: center;
         flex-direction: column;
         background-color: hsl(0, 0%, 98%);
