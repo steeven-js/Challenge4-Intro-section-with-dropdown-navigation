@@ -80,7 +80,7 @@ header nav ul li.active.sub-menu:before {
 
 /* ****************************************** */
 /* Block sub-menu ul .avtive */
-header nav ul li.active ul { /* NATANGAKI*/
+header nav ul li.active ul { 
     display: block;
 }
 /* ****************************************** */
@@ -117,7 +117,6 @@ header nav ul li ul li img {
 /* lien des sub-menu */
 header nav ul li a:hover {
     color: hsl(0, 0%, 8%);
-    /* background: #2196f3; */
 }
 
 @media (max-width: 991px) {
@@ -139,14 +138,13 @@ header nav ul li a:hover {
         right: 20px;
         height: 50px;
         width: 35px;
-        /* border-radius: 50%; */
         border: none;
         outline: none;
         cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
-        background: transparent; /* Création des lignes ensuite*/
+        background: transparent; 
     }
 
     /* #region line*/
@@ -224,7 +222,7 @@ header nav ul li a:hover {
 
     header nav .menu,
     header nav .login {
-        display: block; /*Issou*/
+        display: block; 
         float: none;
     }
 

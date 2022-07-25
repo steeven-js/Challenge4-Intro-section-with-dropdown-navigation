@@ -6,7 +6,7 @@ $(document).ready(function(){
         $(".line").toggleClass("active");
     })
     $('ul li').click(function(){
-        $(this).siblings().removeClass('active'); /*ISSOU LA CHANCLA*/
+        $(this).siblings().removeClass('active'); 
         $(this).toggleClass('active');
     })
 })
