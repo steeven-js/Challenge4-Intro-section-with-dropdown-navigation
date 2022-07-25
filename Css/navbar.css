@@ -14,21 +14,10 @@ body {
     overflow: hidden;
 }
 
-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0 100px;
-    background: hsl(0, 0%, 98%);
-    width: 100%;
-    box-sizing: border-box;
-    height: 50px;
-    z-index: 10;
-}
-
 header .logo {
 	float: left;
 	height: 50px;
+    background: hsl(0, 0%, 98%);
 	display: flex;
 	justify-content: center;
 	align-items: center;
