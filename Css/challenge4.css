@@ -9,6 +9,7 @@
 body, html {
     font-family: 'Epilogue', sans-serif;
     background-color: hsl(0, 0%, 98%);
+    height: 100vh;
     overflow-x: hidden;
 }
 
@@ -120,6 +121,7 @@ body, html {
     #content_mobile {
         display: block;
         margin-top: 80px;
+        /* height: calc(100vh - 50px); */
     }
 
     #content_mobile .container_mobile .img_info img {
@@ -187,6 +189,7 @@ body, html {
     #content_mobile {
         display: block;
         margin-top: 80px;
+        /* height: calc(100vh - 50px); */
     }
 
     #content_mobile .container_mobile .img_info img {
@@ -260,6 +263,7 @@ body, html {
     #content_mobile {
         display: block;
         margin-top: 80px;
+        /* height: calc(100vh - 50px); */
     }
 
     #content_mobile .container_mobile .img_info img {
